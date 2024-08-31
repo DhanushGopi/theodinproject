@@ -1,0 +1,338 @@
+:root{
+    --primarycolor:#0466C9;
+    --seccolor:#007cf9;
+    --normalmodecolor:#fff;
+    --darkmodecolor:#1b2132;
+    --accentcolorone:#313646;
+    --accentdacolortwo:#babdc9;
+    --accentcolorthree:#ffffff;
+}
+
+
+/*
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.tilt-warp-<uniquifier> {
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.climate-crisis-<uniquifier> {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YEAR" 1979;
+}
+
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec1{
+    background-color: var(--darkmodecolor);
+}
+.nav{
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Climate Crisis", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--primarycolor);
+}
+
+.nav-btns{
+    font-size: 18px;
+    width: 400px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-btn{
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accentcolorthree);
+    transition: 0.5s;
+}
+
+.nav-btn:hover{
+    color: var(--seccolor);
+    transition: 0.5s;
+}
+
+.navcta-btn{
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accentcolorthree);
+    padding: 10px 0px;
+    border: 2px solid var(--accentcolorthree);
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+.navcta-btn:hover{
+    background-color: var(--seccolor);
+    transition: 0.5s;
+    color:var(--normalmodecolor);
+
+}
+
+.hero{
+    width: 1080px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 60px 0px;
+}
+
+.hero-left{
+    width: 620px;
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.hero-left h2{
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 100px;
+    color: var(--accentcolorthree);
+}
+
+
+.hero-left p{
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color : var(--accentdacolortwo);
+    padding: 20px 0px;
+}
+
+.hero-img{
+    width: 440px;
+    border-radius: 16px;
+    border: 2px solid var(--accentcolorone);
+}
+
+.cta-btn{
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    color: var(--normalmodecolor);
+    padding: 15px 20px;
+    border-radius: 16px;
+    transition: 0.5s;
+    background-color: var(--seccolor);
+}
+
+.cta-btn:hover{
+    background-color: var(--primarycolor);
+    transition: 0.5s;
+    color:var(--normalmodecolor);
+
+}
+
+.stacks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px 70px 0px;
+}
+
+.stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stack img{
+    padding: 20px;
+    width: 100px;
+    height:100px;
+    transition: 0.5s;
+}
+
+.stack img:hover{
+    scale: 1.5;
+    transition: 0.5s;
+}
+
+.stack p{
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--accentcolorone);   
+}
+
+.sec3{
+    background-color: var(--accentdacolortwo);
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec3 h2{
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 100px;
+    color: var(--seccolor);
+}
+
+.sec3 p{
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: right;
+    color: var(--accentcolorone);
+}
+
+.sec4{
+    background-color: var(--normalmodecolor);
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctacard{
+    width: 1080px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primarycolor);
+    border-radius: 16px;
+}
+
+.ctacard-left h2{
+    font-family: "Tilt Warp", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--normalmodecolor);
+}
+
+.ctacard-left p{
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    padding: 10px 0px;
+    font-style: normal;
+    color: var(--normalmodecolor);
+}
+
+
+.ctacardbtn {
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accentcolorthree);
+    padding: 10px;
+    border: 2px solid var(--accentcolorthree);
+    border-radius: 16px;
+    transition: 0.5s;
+}
+
+.ctacardbtn:hover{
+    background-color: var(--normalmodecolor);
+    transition: 0.5s;
+    color:var(--primarycolor);
+}
+
+.sec5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkmodecolor);
+    color: var(--normalmodecolor);
+}
+
+.sec5 p{
+    padding: 25px;
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+}
+
